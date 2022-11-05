@@ -1,0 +1,52 @@
+@import url(./index.css);
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.img img {
+    border-radius: .625rem;
+    width: 15.8125rem;
+    height: 20.0625rem;
+    margin-left: 1.25rem;
+}
+
+.textbox {
+    text-align: center;
+    text-indent: 2em;
+    overflow: auto;
+    font-size: 1rem;
+    width: 28.75rem;
+    height: 10.5rem;
+    border: .0625rem solid black;
+}
+
+.textBox {
+    width: 15.8125rem;
+    height: 20.0625rem;
+    font-size: .9375rem;
+}
+
+@media screen and (375px<=width<=768px) {
+    main {
+        height: 80vh;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    .img,
+    .img img {
+        width: 100%;
+    }
+    footer {
+        font-size: .75rem;
+        height: 6vh;
+    }
+    .img img,
+    .textBox,
+    .textbox {
+        width: 99vw;
+        margin-left: 0;
+    }
+}

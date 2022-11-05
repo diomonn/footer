@@ -1,0 +1,55 @@
+@import url(./index.css);
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .left {
+    position: relative;
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21.875rem;
+}
+
+main .left .img {
+    width: 100%;
+    height: 70%
+}
+
+main .left .Textbox {
+    width: 100%;
+    height: 20%;
+    border: 1px solid black;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    color: #000;
+}
+
+.img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main .right {
+    position: relative;
+    width: 18.75rem;
+    height: 21.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main .right .Text {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 6.25rem;
+    border: 1px solid #fff;
+}

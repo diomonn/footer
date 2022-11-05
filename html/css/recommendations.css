@@ -1,0 +1,28 @@
+@import url(./index.css);
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .box {
+    text-align: center;
+    font-size: 1.125rem;
+    width: 15.125rem;
+    height: 18.625rem;
+    border-bottom: 3px solid var(--red);
+}
+
+main .box img {
+    width: 100%;
+    height: 85%;
+}
+
+@media screen and (375px<=width<=768px) {
+    main {
+        flex-wrap: wrap;
+    }
+    .box {
+        margin-top: .625rem;
+    }
+}

@@ -1,0 +1,67 @@
+@import url(./index.css);
+main {
+    margin-top: 1.625rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+
+.t,
+.b {
+    width: 90vw;
+    height: 10.625rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.t {
+    margin-left: 5.5rem;
+}
+
+.b {
+    margin-right: 5.5rem;
+}
+
+.b .Boxa {
+    border-left: 3px solid rgb(255, 8, 8);
+}
+
+.t .Boxa {
+    border-right: 3px solid rgb(255, 8, 8);
+}
+
+video {
+    width: 17rem;
+    height: 9.375rem;
+}
+
+.b .Boxa,
+.t .Boxa {
+    text-indent: 2em;
+    font-size: 1.125rem;
+    color: var(--gray);
+    width: 17rem;
+    height: 9.375rem;
+}
+
+.b .Boxa:hover,
+.t .Boxa:hover {
+    color: var(--red);
+}
+
+@media screen and (375px<=width<=768px) {
+    main {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .t,
+    .b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
